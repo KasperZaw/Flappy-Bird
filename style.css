@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    overflow: hidden;
+}
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#background {
+  border: 2px solid black;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+}
+#game {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(img/background\ ok_Obszar\ roboczy\ 1.jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+#bird {
+    position: absolute; 
+    top: 0; 
+    width: 75px;
+    left:160px;
+}
+
+
+#pipe1  {
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+    background-image: url(img/pipe\ 1.png);
+    background-size: cover;
+}
+#pipe2 {
+    background-image: url(img/pipe\ 2.png);
+    height: 300px;
+    rotate: 180deg;
+    width: 120px;
+    background-size: 120px;
+    top: 0;
+  
+    
+}
+
+#pipe1, #pipe2 {
+    position: absolute;
+    animation: move-pipes 3s linear infinite;
+    left: 0;
+}
+
+#score {
+    font-size: 80px;
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+    text-shadow: 3px 0 0 #000, 0 -2px 0 #000, 0 3px 0 #000, -1px 0 0 #000;
+
+    
+}
+.space {
+    height: 50px;
+    margin-top: 100px;
+}
+
+#start-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(img/background\ ok_Obszar\ roboczy\ 1.jpg);
+    background-size: cover;
+    width: 500px;
+  }
+  
+
+
+  #start-page h4 {
+    font-size: 1.5rem;
+    margin-top: 50px;
+    color: rgb(39, 202, 39);
+  }
+  
+  #play-button {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    background-color: #ff923a;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  #background {
+    display: none;
+  }
+
+@keyframes move-pipes {
+    0%{left:100vw}
+    100%{left: -50px;}
+}
