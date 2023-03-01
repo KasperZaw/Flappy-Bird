@@ -1,5 +1,5 @@
 
-window.addEventListener('load', function() {
+
     const startPage = document.getElementById("start-page");
     const playButton = document.getElementById("play-button");
     const background = document.getElementById("background");
@@ -121,5 +121,4 @@ function incrementScore() {
     coinSound.play();
 }
 
-});
 

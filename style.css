@@ -81,7 +81,7 @@ body {
     height: 100vh;
     background-image: url(img/background\ ok_Obszar\ roboczy\ 1.jpg);
     background-size: cover;
-    width: 500px;
+    width: 100vh;
   }
   
 
@@ -107,6 +107,7 @@ body {
   }
 
 @keyframes move-pipes {
-    0%{left:100vw}
-    100%{left: -50px;}
+    0%{left:100%}
+    100%{left: -35%;}
 }
+
